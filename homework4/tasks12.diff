@@ -1,0 +1,466 @@
+Only in /home/magnus0: accountsservice
+Only in /home/magnus0: adjtime
+Only in /home/magnus0: aliases
+Only in /home/magnus0: aliases.db
+Only in /home/magnus0: alsa
+Only in /home/magnus0: alternatives
+Only in /home/magnus0: anacrontab
+Only in /home/magnus0: answers.sh
+Only in /home/magnus0: appstream.conf
+Only in /home/magnus0: .apptainer
+Only in /home/magnus0: apptainer
+Only in /home/magnus0: asciidoc
+Only in /home/magnus0: asound.conf
+Only in /home/magnus0: at.deny
+Only in /home/magnus0: audit
+Only in /home/magnus0: authselect
+Only in /home/magnus0: auto.cvmfs
+Only in /home/magnus0: autofs.conf
+Only in /home/magnus0: auto.master
+Only in /home/magnus0: auto.master.d
+Only in /home/magnus0: auto.misc
+Only in /home/magnus0: auto.net
+Only in /home/magnus0: auto.smb
+Only in /home/magnus0: avahi
+Only in /home/magnus0: bash_completion.d
+Only in /home/magnus0: .bash_history
+diff -y /etc/skel/.bash_logout /home/magnus0/.bash_logout
+# ~/.bash_logout						# ~/.bash_logout
+
+Only in /home/magnus0: .bash_logout~
+diff -y /etc/skel/.bash_profile /home/magnus0/.bash_profile
+# .bash_profile							# .bash_profile
+
+# Get the aliases and functions					# Get the aliases and functions
+if [ -f ~/.bashrc ]; then					if [ -f ~/.bashrc ]; then
+	. ~/.bashrc							. ~/.bashrc
+fi								fi
+
+# User specific environment and startup programs		# User specific environment and startup programs
+							      >	export PATH="/projects/hep/fs10/mnxb11/bin:$PATH"Only in /home/magnus0: .bash_profile~
+diff -y /etc/skel/.bashrc /home/magnus0/.bashrc
+# .bashrc							# .bashrc
+
+# Source global definitions					# Source global definitions
+if [ -f /etc/bashrc ]; then					if [ -f /etc/bashrc ]; then
+	. /etc/bashrc							. /etc/bashrc
+fi								fi
+
+# User specific environment					# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]		if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then								then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"			    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi								fi
+export PATH							export PATH
+
+# Uncomment the following line if you don't like systemctl's 	# Uncomment the following line if you don't like systemctl's 
+# export SYSTEMD_PAGER=						# export SYSTEMD_PAGER=
+
+# User specific aliases and functions				# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then					if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do					for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then						if [ -f "$rc" ]; then
+			. "$rc"								. "$rc"
+		fi								fi
+	done								done
+fi								fi
+
+unset rc							unset rc
+Only in /home/magnus0: .bashrc~
+Only in /home/magnus0: bashrc
+Only in /home/magnus0: bindresvport.blacklist
+Only in /home/magnus0: binfmt.d
+Only in /home/magnus0: bluetooth
+Only in /home/magnus0: brltty
+Only in /home/magnus0: brltty.conf
+Only in /home/magnus0: .cache
+Only in /home/magnus0: certmonger
+Only in /home/magnus0: chromium
+Only in /home/magnus0: chrony.conf
+Only in /home/magnus0: cifs-utils
+Only in /home/magnus0: cockpit
+Only in /home/magnus0: .config
+Only in /home/magnus0: containers
+Only in /home/magnus0: cron.d
+Only in /home/magnus0: cron.daily
+Only in /home/magnus0: cron.deny
+Only in /home/magnus0: cron.hourly
+Only in /home/magnus0: cron.monthly
+Only in /home/magnus0: crontab
+Only in /home/magnus0: cron.weekly
+Only in /home/magnus0: crypto-policies
+Only in /home/magnus0: csh.cshrc
+Only in /home/magnus0: csh.login
+Only in /home/magnus0: cufile.json
+Only in /home/magnus0: cups
+Only in /home/magnus0: cupshelpers
+Only in /home/magnus0: cvmfs
+Only in /home/magnus0: dbus-1
+Only in /home/magnus0: dconf
+Only in /home/magnus0: debuginfod
+Only in /home/magnus0: default
+Only in /home/magnus0: depmod.d
+Only in /home/magnus0: Desktop
+Only in /home/magnus0: dhcp
+Only in /home/magnus0: DIR_COLORS
+Only in /home/magnus0: DIR_COLORS.lightbgcolor
+Only in /home/magnus0: directory_list.txt
+Only in /home/magnus0: dkms
+Only in /home/magnus0: dnf
+Only in /home/magnus0: dnsmasq.conf
+Only in /home/magnus0: dnsmasq.d
+Only in /home/magnus0: Documents
+Only in /home/magnus0: Downloads
+Only in /home/magnus0: dracut.conf
+Only in /home/magnus0: dracut.conf.d
+Only in /home/magnus0: egl
+diff -y /etc/skel/.emacs /home/magnus0/.emacs
+;; .emacs							;; .emacs
+
+(custom-set-variables						(custom-set-variables
+ ;; uncomment to always end a file with a newline		 ;; uncomment to always end a file with a newline
+ ;'(require-final-newline t)					 ;'(require-final-newline t)
+ ;; uncomment to disable loading of "default.el" at startup	 ;; uncomment to disable loading of "default.el" at startup
+ ;'(inhibit-default-init t)					 ;'(inhibit-default-init t)
+ ;; default to unified diffs					 ;; default to unified diffs
+ '(diff-switches "-u"))						 '(diff-switches "-u"))
+
+;;; uncomment for CJK utf-8 support for non-Asian users		;;; uncomment for CJK utf-8 support for non-Asian users
+;; (require 'un-define)						;; (require 'un-define)
+Only in /home/magnus0: .emacs~
+Only in /home/magnus0: enscript.cfg
+Only in /home/magnus0: environment
+Only in /home/magnus0: environment-modules
+Only in /home/magnus0: ethertypes
+Only in /home/magnus0: exports
+Only in /home/magnus0: exports.d
+Only in /home/magnus0: favicon.png
+Only in /home/magnus0: fcoe
+Only in /home/magnus0: filesystems
+Only in /home/magnus0: firefox
+Only in /home/magnus0: firewalld
+Only in /home/magnus0: flatpak
+Only in /home/magnus0: fonts
+Only in /home/magnus0: foomatic
+Only in /home/magnus0: fprintd.conf
+Only in /home/magnus0: fstab
+Only in /home/magnus0: fstab.old
+Only in /home/magnus0: fuse.conf
+Only in /home/magnus0: fwupd
+Only in /home/magnus0: gcrypt
+Only in /home/magnus0: gdbinit
+Only in /home/magnus0: gdbinit.d
+Only in /home/magnus0: gdm
+Only in /home/magnus0: geoclue
+Only in /home/magnus0: git
+Only in /home/magnus0: .gitconfig
+Only in /home/magnus0: glvnd
+Only in /home/magnus0: gnupg
+Only in /home/magnus0: gpfs
+Only in /home/magnus0: grafana
+Only in /home/magnus0: GREP_COLORS
+Only in /home/magnus0: groff
+Only in /home/magnus0: group
+Only in /home/magnus0: group-
+Only in /home/magnus0: grub2.cfg
+Only in /home/magnus0: grub2-efi.cfg
+Only in /home/magnus0: grub.d
+Only in /home/magnus0: gss
+Only in /home/magnus0: gssproxy
+Only in /home/magnus0: hardlink_to_orig
+Only in /home/magnus0: hello.txt
+Only in /home/magnus0: host.conf
+Only in /home/magnus0: hostname
+Only in /home/magnus0: hosts
+Only in /home/magnus0: hp
+Only in /home/magnus0: HW5
+Only in /home/magnus0: ibutils2
+Only in /home/magnus0: idmapd.conf
+Only in /home/magnus0: infiniband
+Only in /home/magnus0: infiniband-diags
+Only in /home/magnus0: init.d
+Only in /home/magnus0: inittab
+Only in /home/magnus0: inputrc
+Only in /home/magnus0: ipa
+Only in /home/magnus0: iproute2
+Only in /home/magnus0: ipsec.conf
+Only in /home/magnus0: ipsec.d
+Only in /home/magnus0: iscsi
+Only in /home/magnus0: issue
+Only in /home/magnus0: issue.d
+Only in /home/magnus0: issue.net
+Only in /home/magnus0: iwpmd.conf
+Only in /home/magnus0: .java
+Only in /home/magnus0: java
+Only in /home/magnus0: jvm
+Only in /home/magnus0: jvm-common
+Only in /home/magnus0: kdump
+Only in /home/magnus0: kdump.conf
+Only in /home/magnus0: kernel
+Only in /home/magnus0: keyutils
+Only in /home/magnus0: krb5.conf
+Only in /home/magnus0: krb5.conf.d
+Only in /home/magnus0: krb5.conf.ipabkp
+diff -y /etc/skel/.kshrc /home/magnus0/.kshrc
+# .kshrc							# .kshrc
+
+# Source global definitions					# Source global definitions
+if [ -f /etc/kshrc ]; then					if [ -f /etc/kshrc ]; then
+	. /etc/kshrc							. /etc/kshrc
+fi								fi
+
+# use emacs editing mode by default				# use emacs editing mode by default
+set -o emacs							set -o emacs
+
+# User specific aliases and functions				# User specific aliases and functions
+
+Only in /home/magnus0: .kshrc~
+Only in /home/magnus0: kshrc
+Only in /home/magnus0: ld.so.cache
+Only in /home/magnus0: ld.so.conf
+Only in /home/magnus0: ld.so.conf.d
+Only in /home/magnus0: .lesshst
+Only in /home/magnus0: libblockdev
+Only in /home/magnus0: libibverbs.d
+Only in /home/magnus0: libnl
+Only in /home/magnus0: libpaper.d
+Only in /home/magnus0: libreport
+Only in /home/magnus0: libssh
+Only in /home/magnus0: libuser.conf
+Only in /home/magnus0: libvirt
+Only in /home/magnus0: .local
+Only in /home/magnus0: locale.conf
+Only in /home/magnus0: localtime
+Only in /home/magnus0: login.defs
+Only in /home/magnus0: logrotate.conf
+Only in /home/magnus0: logrotate.d
+Only in /home/magnus0: lsb-release.d
+Only in /home/magnus0: lsm
+Only in /home/magnus0: lvm
+Only in /home/magnus0: machine-id
+Only in /home/magnus0: magic
+Only in /home/magnus0: mailcap
+Only in /home/magnus0: makedumpfile.conf.sample
+Only in /home/magnus0: man_db.conf
+Only in /home/magnus0: mcelog
+Only in /home/magnus0: mft
+Only in /home/magnus0: microcode_ctl
+Only in /home/magnus0: mime.types
+Only in /home/magnus0: mke2fs.conf
+Only in /home/magnus0: MNXB11-manual.pdf
+Only in /home/magnus0: modprobe.conf
+Only in /home/magnus0: modprobe.d
+Only in /home/magnus0: modulefiles
+Only in /home/magnus0: modules-load.d
+Only in /home/magnus0: motd
+Only in /home/magnus0: motd.d
+Common subdirectories: /etc/skel/.mozilla and /home/magnus0/.mozilla
+Only in /home/magnus0: mtab
+Only in /home/magnus0: multipath
+Only in /home/magnus0: munge
+Only in /home/magnus0: Music
+Only in /home/magnus0: my.cnf
+Only in /home/magnus0: my.cnf.d
+Only in /home/magnus0: myscript.multinode
+Only in /home/magnus0: myscript.simple
+Only in /home/magnus0: nanorc
+Only in /home/magnus0: netconfig
+Only in /home/magnus0: NetworkManager
+Only in /home/magnus0: networks
+Only in /home/magnus0: nfs.conf
+Only in /home/magnus0: nfsmount.conf
+Only in /home/magnus0: nftables
+Only in /home/magnus0: nordugrid-arc-6.20.1
+Only in /home/magnus0: nordugrid-arc-6.20.1.tar.gz
+Only in /home/magnus0: nsswitch.conf
+Only in /home/magnus0: nsswitch.conf.bak
+Only in /home/magnus0: .nv
+Only in /home/magnus0: nvidia
+Only in /home/magnus0: nvme
+Only in /home/magnus0: odbc.ini
+Only in /home/magnus0: odbcinst.ini
+Only in /home/magnus0: oddjob
+Only in /home/magnus0: oddjobd.conf
+Only in /home/magnus0: oddjobd.conf.d
+Only in /home/magnus0: openal
+Only in /home/magnus0: OpenCL
+Only in /home/magnus0: openldap
+Only in /home/magnus0: opensm
+Only in /home/magnus0: opt
+Only in /home/magnus0: os-release
+Only in /home/magnus0: ostree
+Only in /home/magnus0: PackageKit
+Only in /home/magnus0: pam.d
+Only in /home/magnus0: pam_radius.conf
+Only in /home/magnus0: papersize
+Only in /home/magnus0: passwd
+Only in /home/magnus0: passwd-
+Only in /home/magnus0: passwdaliases
+Only in /home/magnus0: pbm2ppa.conf
+Only in /home/magnus0: pcp
+Only in /home/magnus0: pcp.conf
+Only in /home/magnus0: pcp.env
+Only in /home/magnus0: pesign
+Only in /home/magnus0: Pictures
+Only in /home/magnus0: pinforc
+Only in /home/magnus0: pkcs11
+Only in /home/magnus0: pkgconfig
+Only in /home/magnus0: .pki
+Only in /home/magnus0: pki
+Only in /home/magnus0: plymouth
+Only in /home/magnus0: pm
+Only in /home/magnus0: pmix
+Only in /home/magnus0: pnm2ppa.conf
+Only in /home/magnus0: polkit-1
+Only in /home/magnus0: popt.d
+Only in /home/magnus0: postfix
+Only in /home/magnus0: printcap
+Only in /home/magnus0: profile
+Only in /home/magnus0: profile.d
+Only in /home/magnus0: protocols
+Only in /home/magnus0: Public
+Only in /home/magnus0: pulse
+Only in /home/magnus0: qemu-ga
+Only in /home/magnus0: ras
+Only in /home/magnus0: rc.d
+Only in /home/magnus0: rc.local
+Only in /home/magnus0: rdma
+Only in /home/magnus0: redhat-lsb
+Only in /home/magnus0: redhat-release
+Only in /home/magnus0: request-key.conf
+Only in /home/magnus0: request-key.d
+Only in /home/magnus0: resolv.conf
+Only in /home/magnus0: rocky-release
+Only in /home/magnus0: rocky-release-upstream
+Only in /home/magnus0: .root_hist
+Only in /home/magnus0: rpc
+Only in /home/magnus0: rpm
+Only in /home/magnus0: rpmdevtools
+Only in /home/magnus0: rshim.conf
+Only in /home/magnus0: rsyncd.conf
+Only in /home/magnus0: rsyslog.conf
+Only in /home/magnus0: rsyslog.d
+Only in /home/magnus0: rwtab.d
+Only in /home/magnus0: samba
+Only in /home/magnus0: sane.d
+Only in /home/magnus0: sasl2
+Only in /home/magnus0: scl
+Only in /home/magnus0: screenrc
+Only in /home/magnus0: Sebastian_Magnusson_homework3.tgz
+Only in /home/magnus0: security
+Only in /home/magnus0: selinux
+Only in /home/magnus0: sensors3.conf
+Only in /home/magnus0: sensors.d
+Only in /home/magnus0: services
+Only in /home/magnus0: sestatus.conf
+Only in /home/magnus0: setroubleshoot
+Only in /home/magnus0: sgml
+Only in /home/magnus0: shells
+Only in /home/magnus0: sinfo
+Only in /home/magnus0: slurm
+Only in /home/magnus0: slurm-907824.out
+Only in /home/magnus0: slurm-907825.out
+Only in /home/magnus0: slurm-907826.out
+Only in /home/magnus0: smartmontools
+Only in /home/magnus0: s-nail.rc
+Only in /home/magnus0: softlink_to_orig
+Only in /home/magnus0: sos
+Only in /home/magnus0: speech-dispatcher
+Only in /home/magnus0: srp_daemon.conf
+Only in /home/magnus0: .ssh
+Only in /home/magnus0: ssh
+Only in /home/magnus0: ssl
+Only in /home/magnus0: sssd
+Only in /home/magnus0: statetab.d
+Only in /home/magnus0: subgid
+Only in /home/magnus0: subuid
+Only in /home/magnus0: subversion
+Only in /home/magnus0: sudoers.d
+Only in /home/magnus0: sysconfig
+Only in /home/magnus0: sysctl.conf
+Only in /home/magnus0: sysctl.d
+Only in /home/magnus0: systemd
+Only in /home/magnus0: system-release
+Only in /home/magnus0: system-release-cpe
+Only in /home/magnus0: target
+Only in /home/magnus0: taskfarm
+Only in /home/magnus0: Templates
+Only in /home/magnus0: terminfo
+Only in /home/magnus0: test3.py
+Only in /home/magnus0: test.txt
+Only in /home/magnus0: tigrc
+Only in /home/magnus0: tmpfiles.d
+Only in /home/magnus0: TOP-MNXB11
+Only in /home/magnus0: tpm2-tss
+Only in /home/magnus0: trusted-key.key
+Only in /home/magnus0: tuned
+Only in /home/magnus0: tut6
+Only in /home/magnus0: tut7
+Only in /home/magnus0: ucx
+Only in /home/magnus0: udev
+Only in /home/magnus0: udisks2
+Only in /home/magnus0: unbound
+Only in /home/magnus0: .updated
+Only in /home/magnus0: updatedb.conf
+Only in /home/magnus0: UPower
+Only in /home/magnus0: usb_modeswitch.conf
+Only in /home/magnus0: vconsole.conf
+Only in /home/magnus0: vdpau_wrapper.cfg
+Only in /home/magnus0: Videos
+Only in /home/magnus0: vimrc
+Only in /home/magnus0: virc
+Only in /home/magnus0: vmware-tools
+Only in /home/magnus0: .vscode
+Only in /home/magnus0: vulkan
+Only in /home/magnus0: wgetrc
+Only in /home/magnus0: wireplumber
+Only in /home/magnus0: wpa_supplicant
+Only in /home/magnus0: X11
+Only in /home/magnus0: xattr.conf
+Only in /home/magnus0: xdg
+Only in /home/magnus0: xml
+Only in /home/magnus0: yum
+Only in /home/magnus0: yum.conf
+Only in /home/magnus0: yum.repos.d
+Only in /home/magnus0: zabbix
+Only in /home/magnus0: zlogin
+Only in /home/magnus0: zlogout
+Only in /home/magnus0: zprofile
+Only in /home/magnus0: zshenv
+diff -y /etc/skel/.zshrc /home/magnus0/.zshrc
+#								#
+# .zshrc is sourced in interactive shells.			# .zshrc is sourced in interactive shells.
+# It should contain commands to set up aliases,			# It should contain commands to set up aliases,
+# functions, options, key bindings, etc.			# functions, options, key bindings, etc.
+#								#
+
+autoload -U compinit						autoload -U compinit
+compinit							compinit
+
+#allow tab completion in the middle of a word			#allow tab completion in the middle of a word
+setopt COMPLETE_IN_WORD						setopt COMPLETE_IN_WORD
+
+## keep background processes at full speed			## keep background processes at full speed
+#setopt NOBGNICE						#setopt NOBGNICE
+## restart running processes on exit				## restart running processes on exit
+#setopt HUP							#setopt HUP
+
+## history							## history
+#setopt APPEND_HISTORY						#setopt APPEND_HISTORY
+## for sharing history between zsh processes			## for sharing history between zsh processes
+#setopt INC_APPEND_HISTORY					#setopt INC_APPEND_HISTORY
+#setopt SHARE_HISTORY						#setopt SHARE_HISTORY
+
+## never ever beep ever						## never ever beep ever
+#setopt NO_BEEP							#setopt NO_BEEP
+
+## automatically decide when to page a list of completions	## automatically decide when to page a list of completions
+#LISTMAX=0							#LISTMAX=0
+
+## disable mail checking					## disable mail checking
+#MAILCHECK=0							#MAILCHECK=0
+
+# autoload -U colors						# autoload -U colors
+#colors								#colors
+Only in /home/magnus0: .zshrc~
+Only in /home/magnus0: zshrc
