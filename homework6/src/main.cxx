@@ -12,6 +12,11 @@ int computeCheckSum(const std::string& inputString) {
     return checksum;
 }
 
+// Function to calculate key
+int calculateKey(int checksum, char firstArgument, size_t programNameLength) {
+    return (checksum ^ (firstArgument * 3)) << (programNameLength & 0x1f);
+}
+
 int main(int argumentCount, char *arguments[]) {
 
     // Checks if the number of arguments is 3
@@ -21,7 +26,7 @@ int main(int argumentCount, char *arguments[]) {
 
         // Descriptive names
         std::string programName{arguments[0]};
-        char firstArgument{(arguments[1][0])};
+        char firstArgument{(*arguments[1])};
         size_t programNameLength{programName.size()};
         int expectedResult{std::atoi(arguments[2])};
 
@@ -30,10 +35,10 @@ int main(int argumentCount, char *arguments[]) {
         int checksum = computeCheckSum(inputString);
 
         // Moved oout of condition check for readability
-        int result = (checksum ^firstArgument * 3) << (programNameLength & 0x1f);
+        int calculatedKey = calculateKey(checksum, firstArgument, programNameLength);
 
         // Condition check
-        if (result == expectedResult) {
+        if (calculatedKey == expectedResult) {
             std::cout << "Correct!" << std::endl;
         } else {
         std::cout << "Wrong!" << std::endl;
