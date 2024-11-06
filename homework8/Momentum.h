@@ -9,7 +9,8 @@ class Momentum : public TObject {
      Momentum(); // default constructor
      Momentum(Int_t variable); // some other constructor
      virtual ~Momentum(); // destructor
-
+     Double_t GetMomentumMagnitude() const;
+     Double_t px, py, pz;
 
     private:
      Int_t variable_;
